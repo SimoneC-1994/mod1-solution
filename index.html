@@ -11,7 +11,7 @@
     </style>
 </head>
 <body ng-app='MyApp'>
-    <div class="container" ng-controller="LunchCheckController">
+    <div ng-controller="LunchCheckController" class="container">
         <h1>Lunch Checker</h1>
         <div class="form-group">
             <input id="lunch-menu" type="text"
@@ -22,7 +22,7 @@
             <button class="btn btn-default"
             ng-click="CheckNumItems()">Check If Too Much</button>
         </div>
-        <div class="form-group message" ng-class="myStyle">
+        <div ng-class="myStyle" class="form-group message" >
             {{msg}}
         </div>
     </div>
